@@ -52,7 +52,6 @@ chat_id = None
 arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
 DISABLED_GROUPS = []
 useer ="NaN"
-
 def cb_admin_check(func: Callable) -> Callable:
     async def decorator(client, cb):
         admemes = a.get(cb.message.chat.id)
