@@ -50,7 +50,8 @@ from MusicMan.services.downloaders import youtube
 aiohttpsession = aiohttp.ClientSession()
 chat_id = None
 arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
-
+DISABLED_GROUPS = []
+useer ="NaN"
 
 def cb_admin_check(func: Callable) -> Callable:
     async def decorator(client, cb):
